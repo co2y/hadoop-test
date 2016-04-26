@@ -1,6 +1,6 @@
 node:
   image: docker.iwanna.xyz:5000/maven
-  command: java -jar -Xms256m -Xmx1024m /nap/WordCount.jar 
+  command: java -jar -Xms256m -Xmx1024m /nap/WordCount.jar /nap/WordCount.jar /user/root/word.txt /user/root/output
   network: wangwy
   volumes: 
     - /nap/:/
